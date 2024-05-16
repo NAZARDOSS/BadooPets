@@ -1,0 +1,6 @@
+BadooDog/*.user
+**/bin
+**/obj
+
+**/.idea
+**/node_modules
