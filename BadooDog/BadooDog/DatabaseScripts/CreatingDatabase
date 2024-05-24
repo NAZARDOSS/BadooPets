@@ -1,0 +1,11 @@
+﻿create database test;
+
+use test;
+
+create table dog(
+    id int primary key,
+    name varchar(20),
+    age int,
+    image_url varchar(256),
+    description varchar(256)
+);
