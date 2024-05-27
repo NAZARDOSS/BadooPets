@@ -1,11 +1,15 @@
-﻿create database test;
+﻿-- drop database test; 
+create database test;
 
 use test;
 
-create table dog(
-    id int primary key,
-    name varchar(20),
-    age int,
-    image_url varchar(256),
-    description varchar(256)
+CREATE TABLE dog (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(20),
+    age INT,
+    image_url VARCHAR(1056), -- Изменено на VARCHAR
+    description VARCHAR(256),
+    price INT,
+    type_ ENUM('dog', 'cat', 'bird'),
+    gender ENUM('man', 'woman')
 );
